@@ -16,4 +16,7 @@ export class AdminRepsitoriesImplement implements IAdminRepositories {
         async updateRefreshToken(id: string, refreshToken: string): Promise<void> {
             await AdminModel.findByIdAndUpdate(id, { refreshToken });
         }
+        async findByRefreshToken(refreshToken: string): Promise<Admin | null> {
+            return null
+        }
 }
