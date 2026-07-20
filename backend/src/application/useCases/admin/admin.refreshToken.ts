@@ -14,7 +14,6 @@ export class AdminRefreshTokenUseCase{
 
         const payload = this.jwtService.verifyRefreshToken(refreshToken)as {adminId:string,email:string};
         const admin = await this.adminRepositories.findById(payload.adminId);
-        console.log("admin",admin)
         if(!admin){
             throw new APIError(HttpStatus.UNAUTHORIZED,"Admin not found");
         }

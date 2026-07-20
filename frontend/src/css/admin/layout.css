@@ -1,0 +1,17 @@
+.admin-layout{
+    display: flex;
+}
+.admin-main{
+    flex: 1;
+    margin-left: 260px;
+    background: #f6f8fc;
+    min-height: 100vh;
+}
+.dashboard-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.admin-content{
+    padding: 25px;
+}

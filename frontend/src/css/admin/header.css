@@ -1,0 +1,75 @@
+.admin-header {
+    height: 80px;
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,.05);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.menu-btn {
+    border: none;
+    background: transparent;
+    font-size: 22px;
+    cursor: pointer;
+    color: #555;
+}
+
+.menu-btn:hover {
+    color: #1d4ed8;
+}
+
+.header-left h2 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 2px;
+}
+
+.header-left p {
+    color: gray;
+    font-size: 14px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.admin-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.admin-info h4 {
+    font-size: 17px;
+    color: #222;
+    margin-bottom: 2px;
+}
+
+.admin-info p {
+    font-size: 13px;
+    color: gray;
+}
+
+.down-icon {
+    cursor: pointer;
+    color: #666;
+    transition: .3s;
+}
+
+.down-icon:hover {
+    color: #1d4ed8;
+}
